@@ -1,182 +1,158 @@
-*{
-    margin:0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: "Open Sans";
-    color: #8A8F9C;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+  color: #8A8F9C;
 }
 
-.d-flex{
-    padding: 40px 42px 40px 42px;
+h1, h2, h3, h4, h5, h6, p, a, div {
+  font-family: "Open Sans";
 }
 
-.chooseLocation{
-    font-size: 14px;
-    font-weight: lighter;
+p, h6, i, div {
+  font-size: 14px;
 }
 
-.centerhorizontally{
-    flex-direction: row;
-    align-items: center;
+.top-nav {
+  padding: 40px 42px 40px 42px;
+}
+.top-nav .choose-location {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.top-nav .centerhorizontally {
+  flex-direction: row;
+  align-items: center;
+}
+.top-nav #navi-logo {
+  padding: 2px;
 }
 
-.row{
-    height: 100%;
+.row {
+  height: 100%;
+}
+.row .bottom-margin {
+  margin-bottom: 50px;
+}
+.row .bottom-margin .navbar-expand-lg .collapse {
+  flex-direction: column;
+}
+.row .bottom-margin .navbar, .row .bottom-margin .collapse {
+  height: 100%;
+}
+.row .bottom-margin .navbar-toggler {
+  margin-left: auto;
+  margin-right: auto;
+}
+.row .bottom-margin .navbar .collapse svg .user-logo {
+  fill: #7C59FF;
+  rx: 5;
+  transform: rotate(45deg) translateX(20px) translateY(-20px);
+}
+.row .bottom-margin .navbar .collapse .nav-btn {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.row .bottom-margin .navbar .collapse .active-btn {
+  background-color: #7C60FF;
+  color: white;
+}
+.row .bottom-margin .navbar .collapse .bottom-btn {
+  bottom: 0;
+  position: absolute;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.row .bottom-margin div ul .blue {
+  color: #168EEA;
+}
+.row .bottom-margin div ul .blue .blue {
+  color: #168EEA;
 }
 
-.blue{
-    color: #168EEA;
+.col-lg-5 a img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.col-lg-5 a img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.row {
+  height: 100%;
+}
+.row .zero-padding {
+  padding: 0;
+}
+.row .zero-padding .base-padding {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.row .zero-padding .base-padding .active-word {
+  color: #7C60FF;
+}
+.row .zero-padding .base-padding table {
+  width: 100%;
+}
+.row .zero-padding .base-padding table tbody {
+  width: 100%;
+}
+.row .zero-padding .base-padding table tbody th:nth-child(1), .row .zero-padding .base-padding table tbody th:nth-child(3) {
+  width: 50px;
+}
+.row .zero-padding .base-bottom {
+  margin-top: 20px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.row .zero-padding .base-bottom .base-btn {
+  padding: 15px;
+  background-color: #F5F6F7;
+  bottom: 0;
+}
+.row .zero-padding .base-bottom .base-btn-active {
+  color: #42B72A;
+}
+.row .imageDiv {
+  height: 100%;
 }
 
-.imageDiv{
-    height: 100%;
+.iconSize {
+  margin: 5px;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,div{
-    font-family: "Open Sans";
+i {
+  margin: 10px;
 }
 
-p,h6,i,div{
-    font-size: 14px;
+.black-font {
+  color: black;
 }
 
-.activeBtn{
-    background-color: #7C60FF;
-    color: white;
-    width: 75%;
+.forty-font {
+  font-size: 40px;
 }
 
-.activeWord{
-    color: #7C60FF;
+.custom-control-input:focus ~ .custom-control-label::before {
+  border-color: #EEEEEE !important;
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
 }
 
-.navBtn{
-    border-radius: 5px;
-    padding:5px;
-    width: 100%;
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #7C60FF !important;
+  background-color: #7C60FF !important;
 }
 
-.iconSize{
-    margin: 5px;
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: white !important;
+  border-color: #EEEEEE !important;
 }
 
-i{
-    margin: 10px;
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #EEEEEE !important;
 }
 
-.baseBtn{
-    padding: 15px;
-    background-color: #F5F6F7;
-    bottom: 0;
-}
-
-.zeropadding{
-    padding: 0;
-}
-
-.baseBtnActive{
-    color: #42B72A;
-}
-
-.basepadding{
-    padding: 20px;
-    padding-bottom: 0;
-}
-
-.basebottom{
-    margin-top: 20px;
-    bottom:0;
-    position: absolute;
-    width: 100%;
-}
-
-.blackFont{
-    color: black;
-}
-
-.fortyFont{
-    font-size: 40px;
-}
-
-.bottommargin{
-    margin-bottom: 50px;
-}
-
-.bottomBtn{
-    bottom: 0;
-    position: absolute;
-    margin-left: 1rem;
-    margin-bottom: .5rem ;
-}
-
-svg rect{
-    transform: rotate(45deg) translateX(20px) translateY(-20px);
-}
-
-.custom-control-input:focus ~  
-          .custom-control-label::before { 
-                /* when the button is toggled off  
-  it is still in focus and a violet border will appear */ 
-                border-color: #EEEEEE !important; 
-                /* box shadow is blue by default 
-  but we do not want any shadow hence we have set  
-  all the values as 0 */ 
-                box-shadow: 
-                  0 0 0 0rem rgba(0, 0, 0, 0) !important; 
-            } 
-  
-            /*sets the background color of 
-          switch to violet when it is checked*/ 
-            .custom-control-input:checked ~  
-          .custom-control-label::before { 
-                border-color:#7C60FF !important; 
-                background-color: #7C60FF !important; 
-            } 
-  
-            /*sets the background color of 
-          switch to violet when it is active*/ 
-            .custom-control-input:active ~  
-          .custom-control-label::before { 
-                background-color: white !important; 
-                border-color: #EEEEEE !important;
-            } 
-  
-            /*sets the border color of switch 
-          to violet when it is not checked*/ 
-            .custom-control-input:focus: 
-          not(:checked) ~ .custom-control-label::before { 
-                border-color: #EEEEEE !important; 
-            } 
-
-#navilogo{
-    padding: 2px;
-}
-
-tbody,table{
-    width: 100%;
-}
-
-th:nth-child(1), th:nth-child(3){
-    width: 50px;
-}
-
-.navbar-expand-lg .collapse{
-    flex-direction: column;
-}
-
-.navbar,.collapse{
-    height: 100%;
-}
-
-.navbar-toggler{
-    margin-left: auto;
-    margin-right: auto;
-}
+/*# sourceMappingURL=style.css.map */
