@@ -18,27 +18,34 @@
     <div class="container-lg ">
         <div class="row">
             <div class="col-lg-3 bottommargin">
-                <svg width="60" height="45">
-                    <rect width="30" height="30" style="fill:#7C59FF;rx:5;" />
-                    <text x="20" y="25" fill="white">JD</text>
-                </svg>
-                <div><p class="blackFont">John Doe</p><p>Premium Nomad</p></div>
-                <div class="navBtn activeBtn"><i class="fa fa-inbox" style="color:white;" aria-hidden="true"></i>Bookings</div>
-                <ul>
-                    <li class="navBtn"><i class="fa fa-bed" aria-hidden="true"></i>Refer and Earn</li>
-                    <li class="navBtn"><i class="fas fa-user-cog"></i>Account Settings</li>
-                </ul>
-                <ul>
-                    SUPPORT
-                    <li class="navBtn"><i class="fas fa-life-ring"></i>Contact us</li>
-                    <li class="navBtn" style="margin-bottom:30px;"><i class="fas fa-external-link-square-alt"></i>FAQ</li>
-                </ul>
-                <div class="bottomBtn">
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-                        <label class="custom-control-label" for="customSwitch1">Sign Out</label>
-                      </div>
-                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i id="navilogo" class="fas fa-bars  fa-lg" style="margin:0;color: black;"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-height" id="navbarSupportedContent">
+                        <svg width="60" height="45" style="width:100%;">
+                            <rect width="30" height="30" style="fill:#7C59FF;rx:5;" />
+                            <text x="20" y="25" fill="white">JD</text>
+                        </svg>
+                        <div style="width:100%;"><p class="blackFont">John Doe</p><p>Premium Nomad</p></div>
+                        <div class="navBtn activeBtn"><i class="fa fa-inbox" style="color:white;" aria-hidden="true"></i>Bookings</div>
+                        <ul style="width:100%;">
+                            <li class="navBtn"><i class="fa fa-bed" aria-hidden="true"></i>Refer and Earn</li>
+                            <li class="navBtn"><i class="fas fa-user-cog"></i>Account Settings</li>
+                        </ul>
+                        <ul style="width:100%;">
+                            SUPPORT
+                            <li class="navBtn"><i class="fas fa-life-ring"></i>Contact us</li>
+                            <li class="navBtn" style="margin-bottom:30px;"><i class="fas fa-external-link-square-alt"></i>FAQ</li>
+                        </ul>
+                        <div class="bottomBtn" style="width:100%; ">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                <label class="custom-control-label" for="customSwitch1">Sign Out</label>
+                              </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
             
             <div class="col-lg-9 bottommargin">
@@ -93,5 +100,8 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
